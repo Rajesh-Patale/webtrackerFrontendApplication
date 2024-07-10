@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 25px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .task-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .task-details div {
+      margin-bottom: 5px;
+    }
+    #exportbtn {
+      float: left;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Admin Dashboard</h1>
+    
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Login Time</th>
+          <th>Task Description</th>
+          <th>Task Timing</th>
+          <th>LogOut Time</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.timestamp }}</td>
+          <td>
+            <div class="task-details">
+              <div *ngFor="let task of tasks">{{ task.task }}</div>
+            </div>
+          </td>
+          <td>
+            <div class="task-details">
+              <div *ngFor="let task of tasks">{{ task.loginTime }}</div>
+            </div>
+          </td>
+          <td>{{ user.logouttime }}</td>
+          <td>{{ location?.city }}, {{ location?.region }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <button id="exportbtn" class="btn btn-primary" (click)="exportDataToExcel()">Export Data to Excel</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

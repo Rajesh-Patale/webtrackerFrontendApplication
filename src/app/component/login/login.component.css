@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 380px;
+    width: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .login-form:hover {
+    transform: translateY(-5px);
+  }
+  
+  .login-form h2 {
+    margin-bottom: 25px;
+    color: #333333;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: 600;
+  }
+  
+  .form-group .form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.1);
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .sign-up {
+    text-align: center;
+    margin-top: 15px;
+    color: #555555;
+  }
+  
+  .sign-up .create-account-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .sign-up .create-account-link:hover {
+    color: #0056b3;
+  }
+  
+  .admin-login {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .admin-login .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+  
+  .admin-login .btn-secondary:hover {
+    background-color: #5a6268;
+  }

@@ -1,0 +1,31 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.baskervville-sc-regular {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.admin-img {
+  width: 100%;
+  height: auto;
+}
+.large-input {
+  font-size: 1.5rem; /* Increase font size */
+  padding: 0.75rem;  /* Increase padding */
+  width: 100%;      /* Make input full width */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}

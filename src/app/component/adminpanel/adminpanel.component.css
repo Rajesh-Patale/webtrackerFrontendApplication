@@ -1,0 +1,29 @@
+.user-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #b23e3e;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(193, 86, 86, 0.1);
+  }
+  
+  .user-details {
+    padding: 10px;
+  }
+  
+  .user-details p {
+    margin: 5px 0;
+  }
+  
+  #exportbtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #exportbtn:hover {
+    background-color: #45b300;
+  }
