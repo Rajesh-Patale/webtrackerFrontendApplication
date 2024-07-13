@@ -19,6 +19,7 @@ export class AdminComponent implements OnInit {
   
     const hardcodedUsername = 'admin';
     const hardcodedPassword = 'admin123';
+    
 
     if (this.username === hardcodedUsername && this.password === hardcodedPassword) {
       this._router.navigate(['/adminpanel']);
